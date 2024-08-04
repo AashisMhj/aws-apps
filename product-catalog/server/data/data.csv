@@ -1,0 +1,483 @@
+Product ID,Product Name,Category,Price,Stock Quantity,Description
+1,Wireless Mouse,Electronics,29.99,150,Ergonomic wireless mouse with adjustable DPI settings
+2,Cotton T-Shirt,Apparel,14.99,300,Comfortable cotton t-shirt in various sizes and colors
+3,Electric Kettle,Home Appliances,39.99,75,1.7L electric kettle with auto-shutoff and boil-dry protection
+4,Running Shoes,Sports,59.99,120,Lightweight running shoes with breathable mesh and cushioned sole
+5,Smart Watch,Electronics,199.99,50,Smart watch with heart rate monitor and GPS tracking
+6,Wooden Dining Table,Furniture,299.99,20,Sturdy wooden dining table with a natural finish
+7,LED Desk Lamp,Home Office,24.99,200,Adjustable LED desk lamp with touch control and USB port
+8,Wireless Earbuds,Electronics,79.99,180,Noise-canceling wireless earbuds with charging case
+9,Stainless Steel Water Bottle,Accessories,19.99,250,Insulated stainless steel water bottle, keeps drinks cold or hot
+10,Coffee Maker,Home Appliances,89.99,60,Programmable coffee maker with built-in grinder
+11,Leather Wallet,Accessories,34.99,90,Premium leather wallet with RFID blocking
+12,Bluetooth Speaker,Electronics,49.99,140,Portable Bluetooth speaker with deep bass and long battery life
+13,Yoga Mat,Sports,24.99,220,Non-slip yoga mat with carrying strap
+14,Office Chair,Furniture,149.99,35,Ergonomic office chair with lumbar support and adjustable height
+15,Digital Camera,Electronics,299.99,40,Compact digital camera with 20MP sensor and 4K video recording
+16,Ceramic Vase,Home Decor,19.99,70,Handcrafted ceramic vase with a modern design
+17,Laptop Backpack,Accessories,59.99,110,Durable laptop backpack with multiple compartments
+18,Blender,Home Appliances,49.99,85,High-speed blender with multiple speed settings and pulse function
+19,Winter Jacket,Apparel,129.99,55,Insulated winter jacket with hood and waterproof exterior
+20,Electric Toothbrush,Personal Care,39.99,160,Rechargeable electric toothbrush with multiple brushing modes
+21,USB-C Hub,Electronics,29.99,150,Multi-port USB-C hub with HDMI, USB 3.0, and Ethernet
+22,Silk Scarf,Accessories,24.99,75,Luxurious silk scarf available in various patterns
+23,Fitness Tracker,Sports,49.99,90,Waterproof fitness tracker with heart rate and sleep monitor
+24,Ceramic Knife Set,Kitchen,39.99,110,Set of 4 ceramic knives with ergonomic handles
+25,Camping Tent,Outdoor,99.99,35,4-person camping tent with waterproof and UV protection
+26,Noise Cancelling Headphones,Electronics,129.99,65,Over-ear noise-cancelling headphones with Bluetooth
+27,Espresso Machine,Home Appliances,199.99,40,Automatic espresso machine with milk frother
+28,Electric Griddle,Kitchen,49.99,80,Non-stick electric griddle with adjustable temperature control
+29,Gaming Keyboard,Electronics,89.99,120,Mechanical gaming keyboard with RGB backlighting
+30,Memory Foam Pillow,Bedding,34.99,100,Ergonomic memory foam pillow with cooling gel
+31,Portable Projector,Electronics,299.99,25,Compact portable projector with 1080p resolution
+32,Hair Dryer,Personal Care,39.99,140,Ionic hair dryer with multiple heat and speed settings
+33,Artificial Succulents,Home Decor,19.99,200,Set of 3 artificial succulents in ceramic pots
+34,Electric Pressure Cooker,Kitchen,89.99,50,8-in-1 electric pressure cooker with digital display
+35,Waterproof Backpack,Outdoor,59.99,70,Durable waterproof backpack with multiple compartments
+36,Digital Thermometer,Health,14.99,180,Fast-read digital thermometer with flexible tip
+37,Pet Bed,Pet Supplies,29.99,60,Comfortable pet bed with removable washable cover
+38,Wireless Charger,Electronics,24.99,250,Fast wireless charger compatible with Qi-enabled devices
+39,Sun Hat,Accessories,19.99,130,Wide-brim sun hat with UV protection
+40,Dehumidifier,Home Appliances,149.99,30,Portable dehumidifier with continuous drain option
+41,Kitchen Scale,Kitchen,19.99,140,Digital kitchen scale with tare function and LCD display
+42,Wall Art,Home Decor,49.99,80,Set of 3 framed wall art prints in modern designs
+43,Luggage Set,Travel,199.99,45,3-piece luggage set with spinner wheels and TSA locks
+44,Hand Blender,Kitchen,34.99,90,Immersion hand blender with multiple speed settings
+45,Winter Gloves,Apparel,24.99,120,Insulated winter gloves with touchscreen compatibility
+46,Electric Skillet,Kitchen,59.99,70,Non-stick electric skillet with glass lid
+47,Pet Feeder,Pet Supplies,39.99,50,Automatic pet feeder with programmable timer
+48,Weighted Blanket,Bedding,89.99,60,Weighted blanket with breathable cotton cover
+49,Vacuum Cleaner,Home Appliances,149.99,40,High-power vacuum cleaner with HEPA filter
+50,Camping Chair,Outdoor,39.99,75,Folding camping chair with cup holder and carrying bag
+51,Smart Light Bulb,Home Automation,19.99,100,Smart LED light bulb with WiFi control and color changing
+52,Shower Speaker,Electronics,29.99,110,Waterproof Bluetooth shower speaker with suction cup
+53,Travel Pillow,Travel,24.99,140,Memory foam travel pillow with removable cover
+54,Wireless Game Controller,Electronics,49.99,90,Ergonomic wireless game controller compatible with multiple platforms
+55,Electric Razor,Personal Care,59.99,70,Rechargeable electric razor with multiple grooming attachments
+56,Face Mask,Health,14.99,300,Reusable face mask with adjustable ear loops and filter pocket
+57,Picnic Basket,Outdoor,59.99,40,Wicker picnic basket set with plates, utensils, and blanket
+58,Handheld Vacuum,Home Appliances,69.99,80,Cordless handheld vacuum with powerful suction
+59,Yoga Blocks,Fitness,19.99,150,Set of 2 high-density foam yoga blocks
+60,Desk Organizer,Office Supplies,24.99,120,Multi-compartment desk organizer with drawer
+61,Skateboard,Outdoor,59.99,60,Standard skateboard with grip tape and durable wheels
+62,Hand Mixer,Kitchen,29.99,100,Electric hand mixer with 5 speed settings
+63,Table Lamp,Home Decor,34.99,90,Modern table lamp with adjustable brightness
+64,BBQ Grill,Outdoor,199.99,30,Portable BBQ grill with folding legs and carry handle
+65,Travel Mug,Accessories,19.99,180,Insulated travel mug with spill-proof lid
+66,Floor Lamp,Home Decor,89.99,45,LED floor lamp with remote control and dimmable settings
+67,Electric Blanket,Bedding,59.99,70,Heated electric blanket with multiple heat settings
+68,Water Filter Pitcher,Kitchen,29.99,150,Water filter pitcher with long-lasting filter
+69,Guitar Stand,Music,19.99,120,Foldable guitar stand with non-slip rubber feet
+70,Tool Set,Tools,49.99,90,40-piece tool set with carrying case
+71,Kids' Scooter,Outdoor,39.99,60,Foldable kids' scooter with adjustable handlebar
+72,Sewing Machine,Home Appliances,129.99,40,Portable sewing machine with multiple stitch patterns
+73,Laptop Stand,Office Supplies,34.99,150,Adjustable laptop stand with cooling fan
+74,Throw Blanket,Home Decor,29.99,100,Soft throw blanket with fringe trim
+75,Dumbbell Set,Fitness,79.99,80,Adjustable dumbbell set with storage rack
+76,Camping Stove,Outdoor,59.99,70,Portable camping stove with windscreen and carrying case
+77,Gaming Mouse,Electronics,39.99,120,RGB gaming mouse with adjustable DPI and programmable buttons
+78,Car Vacuum,Automotive,29.99,110,Portable car vacuum with multiple attachments
+79,Fragrance Diffuser,Home Decor,24.99,200,Essential oil fragrance diffuser with timer settings
+80,Photo Frame,Home Decor,19.99,140,Set of 4 wooden photo frames with glass front
+81,Chef Knife,Kitchen,49.99,80,Professional chef knife with high-carbon stainless steel blade
+82,Laptop Cooling Pad,Electronics,29.99,130,USB-powered laptop cooling pad with LED lights
+83,Electric Grill,Kitchen,69.99,50,Indoor electric grill with non-stick surface and temperature control
+84,Bean Bag Chair,Furniture,99.99,30,Large bean bag chair with removable cover
+85,Toaster Oven,Kitchen,59.99,60,Compact toaster oven with multiple functions
+86,Tablet Stand,Electronics,19.99,150,Adjustable tablet stand with 360-degree rotation
+87,Dog Leash,Pet Supplies,14.99,120,Reflective dog leash with padded handle
+88,Resistance Bands,Fitness,24.99,140,Set of 5 resistance bands with different tension levels
+89,Storage Ottoman,Furniture,49.99,50,Storage ottoman with hinged lid and fabric upholstery
+90,Hot Air Fryer,Kitchen,89.99,45,Digital hot air fryer with multiple presets
+91,Bath Towel,Home,24.99,150,Soft and absorbent bath towel available in multiple colors
+92,Kitchen Knife Set,Kitchen,59.99,80,Stainless steel kitchen knife set with wooden block
+93,Electric Scooter,Electronics,299.99,20,Foldable electric scooter with long battery life
+94,Dog Bed,Pet Supplies,49.99,50,Comfortable dog bed with removable cover
+95,Wireless Mouse,Electronics,19.99,200,Compact wireless mouse with silent clicks
+96,Standing Desk,Furniture,199.99,30,Adjustable standing desk with large work surface
+97,Air Purifier,Home Appliances,149.99,40,HEPA air purifier with 3-speed fan and timer
+98,Beach Umbrella,Outdoor,39.99,70,Portable beach umbrella with UV protection
+99,Bluetooth Headset,Electronics,49.99,90,Wireless Bluetooth headset with noise-canceling mic
+100,Espresso Cups,Kitchen,24.99,150,Set of 4 espresso cups with saucers
+101,Gaming Chair,Furniture,159.99,25,Ergonomic gaming chair with adjustable armrests
+102,Electric Shaver,Personal Care,69.99,60,Rechargeable electric shaver with pivoting head
+103,Kids' Tent,Outdoor,29.99,100,Pop-up kids' play tent with carrying case
+104,Fitness Ball,Sports,19.99,120,Anti-burst exercise ball with foot pump
+105,Juicer,Kitchen,89.99,40,Slow masticating juicer with quiet motor
+106,Table Tennis Set,Sports,49.99,60,Portable table tennis set with net and paddles
+107,Smart Thermostat,Home Automation,129.99,50,WiFi-enabled smart thermostat with app control
+108,Electric Bike,Outdoor,799.99,15,Electric bike with pedal assist and removable battery
+109,Wireless Keyboard,Electronics,29.99,180,Slim wireless keyboard with rechargeable battery
+110,Picnic Blanket,Outdoor,24.99,110,Waterproof picnic blanket with carrying strap
+111,Safety Helmet,Sports,39.99,90,Adjustable safety helmet with ventilation
+112,Back Massager,Personal Care,79.99,70,Portable back massager with heat function
+113,Folding Ladder,Tools,59.99,50,Multi-purpose folding ladder with non-slip steps
+114,LED Flashlight,Outdoor,19.99,200,Rechargeable LED flashlight with adjustable focus
+115,Toaster,Kitchen,29.99,90,2-slice toaster with browning control and crumb tray
+116,Dog Crate,Pet Supplies,79.99,40,Collapsible dog crate with removable tray
+117,Smart Doorbell,Home Automation,99.99,60,Smart video doorbell with motion detection
+118,Travel Adapter,Travel,19.99,130,Universal travel adapter with multiple USB ports
+119,Digital Photo Frame,Electronics,59.99,80,Digital photo frame with slideshow and remote control
+120,Blender Bottle,Kitchen,14.99,150,Shaker bottle with wire whisk for mixing drinks
+121,Laptop Case,Accessories,29.99,100,Protective laptop case with padded interior
+122,Car Seat Cover,Automotive,49.99,70,Waterproof car seat cover with non-slip backing
+123,Bluetooth Earbuds,Electronics,69.99,90,Wireless Bluetooth earbuds with charging case
+124,Yoga Wheel,Fitness,29.99,110,Yoga wheel for stretching and improving flexibility
+125,Fire Pit,Outdoor,149.99,30,Portable fire pit with spark screen and poker
+126,Electric Toothbrush,Personal Care,49.99,100,Electric toothbrush with multiple brushing modes
+127,Smart Plug,Home Automation,19.99,140,WiFi smart plug with voice control compatibility
+128,Car Charger,Automotive,24.99,200,Fast charging car charger with dual USB ports
+129,Facial Steamer,Personal Care,39.99,80,Portable facial steamer with nano ionic technology
+130,Portable Safe,Home,49.99,50,Compact portable safe with combination lock
+131,Camping Hammock,Outdoor,29.99,100,Lightweight camping hammock with tree straps
+132,Spice Rack,Kitchen,39.99,70,Rotating spice rack with 16 jars
+133,BBQ Tools,Outdoor,49.99,80,Set of stainless steel BBQ tools with carrying case
+134,Floor Cushion,Home Decor,29.99,90,Large floor cushion with soft fabric cover
+135,Electric Wine Opener,Kitchen,29.99,120,Rechargeable electric wine opener with foil cutter
+136,Wind Chimes,Home Decor,19.99,110,Handcrafted wind chimes with melodic tones
+137,Portable Blender,Kitchen,24.99,140,USB rechargeable portable blender for smoothies
+138,Outdoor String Lights,Home Decor,29.99,130,LED outdoor string lights with remote control
+139,Tent Fan,Outdoor,19.99,200,Battery-operated tent fan with hanging hook
+140,Car Cover,Automotive,49.99,60,All-weather car cover with elastic hem
+141,Lunch Box,Kitchen,24.99,150,Insulated lunch box with multiple compartments
+142,Electric Heater,Home Appliances,49.99,70,Ceramic electric heater with adjustable thermostat
+143,Waterproof Camera,Electronics,99.99,40,Waterproof digital camera with underwater mode
+144,Weighted Jump Rope,Fitness,19.99,160,Weighted jump rope with adjustable length
+145,Electric Ice Cream Maker,Kitchen,59.99,50,Automatic ice cream maker with digital timer
+146,Dog Training Collar,Pet Supplies,39.99,70,Remote dog training collar with beep and vibration modes
+147,Air Mattress,Home,49.99,60,Inflatable air mattress with built-in pump
+148,Bathroom Scale,Health,29.99,100,Digital bathroom scale with backlit display
+149,Smart Lock,Home Automation,149.99,30,Keyless smart lock with fingerprint recognition
+150,Tablet Case,Electronics,24.99,140,Protective tablet case with adjustable stand
+151,Travel Backpack,Accessories,69.99,100,Durable travel backpack with multiple compartments and USB charging port
+152,Smart Scale,Health,39.99,80,Bluetooth smart scale with body composition analysis
+153,Kids' Tablet,Electronics,99.99,50,Durable kids' tablet with parental controls and pre-installed educational apps
+154,Electric Fireplace,Home Appliances,199.99,20,Portable electric fireplace with adjustable heat settings
+155,Security Camera,Home Automation,59.99,70,WiFi security camera with night vision and motion detection
+156,Electric Griddle,Kitchen,49.99,90,Non-stick electric griddle with adjustable temperature control
+157,Fitness Tracker,Health,59.99,120,Waterproof fitness tracker with heart rate and sleep monitor
+158,Camping Lantern,Outdoor,19.99,200,Rechargeable camping lantern with multiple brightness levels
+159,Smart Speaker,Electronics,89.99,60,Voice-controlled smart speaker with high-fidelity sound
+160,Portable Air Conditioner,Home Appliances,249.99,15,Portable air conditioner with remote control and dehumidifier function
+161,Electric Toothbrush,Personal Care,29.99,140,Rechargeable electric toothbrush with multiple brushing modes
+162,Water Bottle,Accessories,14.99,180,Stainless steel water bottle with insulated double-wall design
+163,Gaming Headset,Electronics,79.99,90,Over-ear gaming headset with surround sound and noise-canceling mic
+164,Espresso Machine,Kitchen,149.99,35,Compact espresso machine with built-in milk frother
+165,Air Fryer,Kitchen,79.99,70,Digital air fryer with touch screen and multiple cooking presets
+166,Bike Helmet,Sports,49.99,100,Adjustable bike helmet with ventilation and removable visor
+167,Portable Power Bank,Electronics,29.99,150,High-capacity portable power bank with fast charging
+168,Robot Vacuum,Home Appliances,199.99,25,Smart robot vacuum with app control and automatic charging
+169,Standing Mixer,Kitchen,199.99,40,Electric standing mixer with multiple attachments
+170,Heated Blanket,Bedding,59.99,60,Electric heated blanket with adjustable heat settings
+171,Pressure Washer,Tools,149.99,30,High-power electric pressure washer with multiple nozzles
+172,Yoga Mat,Fitness,24.99,220,Non-slip yoga mat with carrying strap and alignment lines
+173,LED String Lights,Home Decor,19.99,180,Battery-operated LED string lights with remote control
+174,Pet Grooming Kit,Pet Supplies,39.99,100,Professional pet grooming kit with clippers and accessories
+175,WiFi Range Extender,Electronics,49.99,90,WiFi range extender with dual-band support and easy setup
+176,Inflatable Kayak,Outdoor,299.99,20,Two-person inflatable kayak with paddles and pump
+177,Electric Skillet,Kitchen,59.99,70,Non-stick electric skillet with glass lid and temperature control
+178,Bluetooth Car Kit,Automotive,29.99,150,Bluetooth car kit with FM transmitter and hands-free calling
+179,Portable Speaker,Electronics,49.99,130,Waterproof portable speaker with Bluetooth connectivity
+180,Fitness Tracker,Health,39.99,160,Lightweight fitness tracker with activity and sleep tracking
+181,Coffee Grinder,Kitchen,29.99,100,Electric coffee grinder with adjustable grind settings
+182,Facial Cleansing Brush,Personal Care,24.99,140,Rechargeable facial cleansing brush with multiple speed settings
+183,Handheld Game Console,Electronics,99.99,50,Portable handheld game console with preloaded classic games
+184,Digital Alarm Clock,Home,19.99,170,Digital alarm clock with large display and dual USB ports
+185,Wireless Earbuds,Electronics,59.99,110,True wireless earbuds with charging case and touch controls
+186,Electric Kettle,Kitchen,39.99,80,Stainless steel electric kettle with auto shut-off and boil-dry protection
+187,Pet Water Fountain,Pet Supplies,34.99,90,Automatic pet water fountain with filtration system
+188,Portable Cooler,Outdoor,49.99,60,Insulated portable cooler with wheels and handle
+189,Electric Pressure Cooker,Kitchen,89.99,50,Multi-function electric pressure cooker with digital display
+190,Camping Stove,Outdoor,59.99,40,Portable camping stove with adjustable flame control
+191,Electric Hair Trimmer,Personal Care,29.99,150,Rechargeable electric hair trimmer with multiple attachments
+192,Wireless Charger,Electronics,24.99,180,Fast wireless charger compatible with Qi-enabled devices
+193,Portable Hammock,Outdoor,29.99,100,Lightweight portable hammock with carrying bag
+194,Electric Rice Cooker,Kitchen,49.99,70,Automatic electric rice cooker with keep-warm function
+195,Smart Light Switch,Home Automation,29.99,140,WiFi smart light switch with app control and voice compatibility
+196,Portable Projector,Electronics,199.99,30,Mini portable projector with HD resolution and HDMI input
+197,Pet Carrier,Pet Supplies,39.99,70,Airline-approved pet carrier with mesh windows and shoulder strap
+198,Kitchen Scale,Kitchen,19.99,120,Digital kitchen scale with tare function and backlit display
+199,Portable Fan,Home,24.99,180,Rechargeable portable fan with adjustable speed settings
+200,Electric Blanket,Bedding,49.99,60,Heated electric blanket with soft microplush fabric
+201,Laptop Stand,Office Supplies,39.99,150,Adjustable laptop stand with cooling fan
+202,Electric Knife,Kitchen,29.99,80,Electric carving knife with serrated blades
+203,Pet Grooming Glove,Pet Supplies,14.99,200,Pet grooming glove with gentle silicone tips
+204,Outdoor Swing,Outdoor,149.99,40,Heavy-duty outdoor swing with durable ropes
+205,Smartphone Gimbal,Electronics,99.99,50,3-axis handheld gimbal stabilizer for smartphones
+206,Wireless Charging Pad,Electronics,29.99,150,Fast wireless charging pad with anti-slip surface
+207,Digital Meat Thermometer,Kitchen,19.99,100,Instant-read digital meat thermometer with LCD display
+208,Electric Scooter for Kids,Outdoor,149.99,30,Electric scooter for kids with adjustable speed
+209,Smart Door Lock,Home Automation,129.99,60,Bluetooth smart door lock with keyless entry
+210,Wireless Security Camera,Electronics,79.99,70,Outdoor wireless security camera with night vision
+211,UV Sterilizer Box,Health,49.99,90,Portable UV sterilizer box for sanitizing small items
+212,Portable Gas Grill,Outdoor,99.99,50,Compact portable gas grill with foldable legs
+213,Digital Drawing Tablet,Electronics,69.99,60,Graphic drawing tablet with stylus and pressure sensitivity
+214,Electric Can Opener,Kitchen,24.99,110,Automatic electric can opener with smooth edge cutting
+215,Wireless Doorbell,Home,29.99,130,Wireless doorbell with multiple chimes and adjustable volume
+216,USB Desk Fan,Electronics,14.99,150,Compact USB desk fan with adjustable angle
+217,Bathroom Organizer,Home,19.99,120,Bathroom organizer shelf with towel rack
+218,Outdoor Solar Lights,Home,39.99,100,Solar-powered outdoor lights with motion sensor
+219,Digital Voice Recorder,Electronics,49.99,80,Portable digital voice recorder with high-quality audio
+220,Pet Stroller,Pet Supplies,69.99,40,Foldable pet stroller with mesh windows and storage basket
+221,Car Dash Camera,Automotive,59.99,70,HD car dash camera with night vision and loop recording
+222,Smart Light Strip,Home Automation,29.99,130,WiFi-enabled smart light strip with color changing
+223,Foldable Treadmill,Fitness,299.99,20,Compact foldable treadmill with LCD display
+224,Electric Toothbrush for Kids,Personal Care,24.99,140,Rechargeable electric toothbrush with fun designs for kids
+225,Smart Plug Mini,Home Automation,19.99,160,Compact smart plug with app control and voice compatibility
+226,Indoor Herb Garden,Home,49.99,50,LED indoor herb garden kit with automatic watering system
+227,Inflatable Pool,Outdoor,39.99,80,Family-sized inflatable pool with built-in seats
+228,Digital Kitchen Timer,Kitchen,14.99,100,Digital kitchen timer with large display and loud alarm
+229,Wireless Mouse for Gaming,Electronics,39.99,90,High-precision wireless gaming mouse with customizable buttons
+230,Pet Feeder,Pet Supplies,49.99,60,Automatic pet feeder with programmable timer and portion control
+231,Portable Blender for Smoothies,Kitchen,29.99,110,USB rechargeable portable blender for smoothies and shakes
+232,Smart LED Bulb,Home Automation,19.99,150,Smart LED bulb with app control and voice compatibility
+233,Electric Hand Warmer,Personal Care,24.99,200,Rechargeable electric hand warmer with adjustable heat
+234,Bike Light Set,Sports,29.99,120,Front and rear bike light set with multiple modes
+235,Digital Picture Frame,Home,79.99,50,WiFi digital picture frame with slideshow and app control
+236,Portable Air Pump,Automotive,39.99,90,Electric portable air pump for car tires and inflatables
+237,Smart Door Sensor,Home Automation,24.99,140,Wireless smart door sensor with app alerts
+238,Electric Foot Massager,Personal Care,59.99,60,Electric foot massager with heat and shiatsu massage
+239,Outdoor Picnic Table,Outdoor,99.99,30,Foldable outdoor picnic table with built-in seating
+240,Digital Blood Pressure Monitor,Health,49.99,70,Automatic digital blood pressure monitor with large display
+241,Pet Water Dispenser,Pet Supplies,34.99,80,Gravity pet water dispenser with large capacity
+242,Electric Lunch Box,Kitchen,24.99,100,Portable electric lunch box with heating function
+243,Smart Thermostat with WiFi,Home Automation,129.99,40,WiFi-enabled smart thermostat with app control
+244,Fitness Tracker for Kids,Health,29.99,110,Waterproof fitness tracker for kids with activity and sleep tracking
+245,Wireless Gaming Controller,Electronics,59.99,90,Ergonomic wireless gaming controller with vibration feedback
+246,Portable Outdoor Shower,Outdoor,49.99,50,Portable outdoor shower with pump and hose
+247,Digital Luggage Scale,Travel,19.99,130,Portable digital luggage scale with backlit display
+248,Electric Blanket with Timer,Bedding,69.99,60,Heated electric blanket with timer and auto shut-off
+249,WiFi Smart Plug,Home Automation,19.99,140,Smart plug with energy monitoring and app control
+250,Portable Jump Starter,Automotive,69.99,70,Compact portable jump starter for car batteries
+251,Wireless Charging Station,Electronics,39.99,100,Multi-device wireless charging station with fast charge
+252,Electric Wine Opener,Kitchen,29.99,120,Rechargeable electric wine opener with foil cutter
+253,Smart Home Security System,Home Automation,199.99,30,DIY smart home security system with app control
+254,Portable Outdoor Speaker,Electronics,59.99,80,Waterproof portable outdoor speaker with Bluetooth
+255,Car Vacuum Cleaner,Automotive,29.99,100,High-power car vacuum cleaner with multiple attachments
+256,Smart Light Switch with Dimmer,Home Automation,39.99,90,WiFi smart light switch with dimming function
+257,Electric Hair Clipper,Personal Care,49.99,80,Professional electric hair clipper with multiple guard sizes
+258,Pet Hair Remover,Pet Supplies,19.99,140,Reusable pet hair remover with self-cleaning base
+259,Outdoor Patio Heater,Outdoor,149.99,20,Propane outdoor patio heater with adjustable heat
+260,Electric Tea Kettle,Kitchen,39.99,70,Glass electric tea kettle with LED lighting
+261,Wireless Earbuds for Sports,Electronics,79.99,100,Waterproof wireless earbuds with secure fit and long battery life
+262,Smart Robot Vacuum,Home Automation,249.99,20,Self-charging smart robot vacuum with multiple cleaning modes
+263,Electric Nail File,Personal Care,24.99,150,Rechargeable electric nail file with multiple attachments
+264,Camping Tent,Outdoor,99.99,40,4-person camping tent with waterproof design and easy setup
+265,Digital Air Fryer,Kitchen,99.99,60,Large capacity digital air fryer with multiple cooking presets
+266,Smart Alarm Clock,Home Automation,49.99,80,Smart alarm clock with voice assistant and wireless charging
+267,Pet Hair Dryer,Pet Supplies,59.99,50,Quiet pet hair dryer with adjustable temperature settings
+268,Portable Photo Printer,Electronics,129.99,30,Compact portable photo printer with wireless connectivity
+269,Electric Blanket with Dual Control,Bedding,89.99,40,King size electric blanket with dual temperature control
+270,Outdoor Fire Pit,Outdoor,199.99,20,Wood-burning outdoor fire pit with safety screen and poker
+271,Smart Light Bulb,Home Automation,19.99,180,WiFi smart light bulb with color changing and app control
+272,Electric Cheese Grater,Kitchen,29.99,70,Rechargeable electric cheese grater with stainless steel blades
+273,Wireless Charging Pad with Stand,Electronics,39.99,100,Adjustable wireless charging pad with stand for smartphones
+274,Digital Tire Pressure Gauge,Automotive,19.99,150,Accurate digital tire pressure gauge with backlit display
+275,Portable Coffee Maker,Kitchen,49.99,60,Compact portable coffee maker with reusable filter
+276,Smart Home Hub,Home Automation,99.99,30,Centralized smart home hub with compatibility for multiple devices
+277,Electric Hand Mixer,Kitchen,29.99,90,Lightweight electric hand mixer with multiple speed settings
+278,Smart Plug with Energy Monitoring,Home Automation,24.99,140,WiFi smart plug with energy monitoring and app control
+279,Outdoor Solar Lanterns,Home Decor,29.99,110,Solar-powered outdoor lanterns with hanging hook
+280,Electric Pasta Maker,Kitchen,99.99,40,Automatic electric pasta maker with multiple shaping discs
+281,Smart WiFi Camera,Electronics,69.99,80,Indoor smart WiFi camera with 360-degree coverage
+282,Electric Pressure Cooker with Slow Cook Function,Kitchen,129.99,50,Multi-functional electric pressure cooker with slow cook and sauté functions
+283,Wireless Presentation Remote,Office Supplies,29.99,100,Wireless presentation remote with laser pointer and slide control
+284,Electric Heated Vest,Clothing,79.99,70,Rechargeable electric heated vest with adjustable heat settings
+285,Smart Light Panels,Home Automation,199.99,20,Modular smart light panels with app control and music sync
+286,Digital Weather Station,Electronics,49.99,90,Home digital weather station with indoor/outdoor sensors
+287,Electric Citrus Juicer,Kitchen,39.99,80,Automatic electric citrus juicer with pulp control
+288,Smart WiFi Router,Electronics,129.99,40,High-speed smart WiFi router with parental controls and app management
+289,Electric Hair Straightener Brush,Personal Care,29.99,120,2-in-1 electric hair straightener brush with fast heating
+290,Smart LED Desk Lamp,Office Supplies,39.99,100,Smart LED desk lamp with adjustable brightness and color temperature
+291,Pet GPS Tracker,Pet Supplies,59.99,60,Real-time GPS tracker for pets with activity monitoring
+292,Portable Car Fridge,Automotive,199.99,30,Portable car fridge/freezer with dual-zone cooling
+293,Electric Handheld Vacuum,Home,49.99,80,Lightweight handheld vacuum with powerful suction and attachments
+294,Smart Thermostat with Touch Screen,Home Automation,149.99,30,WiFi-enabled smart thermostat with touch screen and app control
+295,Electric Griddle with Removable Plates,Kitchen,59.99,70,Non-stick electric griddle with removable plates for easy cleaning
+296,Wireless Charging Car Mount,Automotive,29.99,100,Adjustable wireless charging car mount for smartphones
+297,Electric Toothbrush with UV Sanitizer,Personal Care,79.99,50,Rechargeable electric toothbrush with UV sanitizer and multiple brushing modes
+298,Smart LED Strip Lights,Home Decor,39.99,120,WiFi-enabled smart LED strip lights with app control and voice compatibility
+299,Electric Pressure Washer with Foam Cannon,Tools,179.99,30,High-power electric pressure washer with foam cannon for deep cleaning
+300,Smart Water Bottle,Health,29.99,140,Smart water bottle with hydration reminders and app tracking
+301,Digital Kitchen Thermometer,Kitchen,24.99,130,Instant-read digital kitchen thermometer with foldable probe
+302,Portable Air Compressor,Automotive,49.99,90,Compact portable air compressor for car tires and inflatables
+303,Smart Doorbell Camera,Home Automation,149.99,40,WiFi-enabled smart doorbell camera with two-way audio
+304,Electric Wine Aerator,Kitchen,39.99,70,Rechargeable electric wine aerator and dispenser
+305,Smart Smoke Detector,Home Automation,49.99,80,WiFi smart smoke detector with app alerts and battery backup
+306,Portable Nebulizer,Health,69.99,60,Rechargeable portable nebulizer for respiratory treatments
+307,Electric Heated Blanket with Timer,Bedding,59.99,50,Heated electric blanket with adjustable heat settings and timer
+308,Smart Plug with Alexa Integration,Home Automation,19.99,160,WiFi smart plug with Alexa and Google Assistant integration
+309,Electric Ceramic Heater,Home Appliances,49.99,70,Compact electric ceramic heater with adjustable thermostat
+310,Smart Body Scale,Health,39.99,100,Bluetooth smart body scale with body composition analysis
+311,Wireless Home Security Camera,Electronics,59.99,90,Indoor wireless security camera with motion detection and night vision
+312,Electric Fondue Set,Kitchen,49.99,60,Electric fondue set with adjustable temperature control
+313,Smart WiFi Light Bulb,Home Automation,19.99,150,WiFi smart light bulb with dimmable white and color settings
+314,Portable Induction Cooktop,Kitchen,59.99,80,Compact portable induction cooktop with digital controls
+315,Smart Water Leak Detector,Home Automation,29.99,120,WiFi smart water leak detector with app alerts
+316,Electric Heated Mattress Pad,Bedding,79.99,40,Heated mattress pad with dual control and auto shut-off
+317,Wireless Pet Camera,Pet Supplies,49.99,70,WiFi pet camera with treat dispenser and two-way audio
+318,Electric Air Fryer Oven,Kitchen,129.99,50,Multi-function electric air fryer oven with rotisserie and dehydrator
+319,Smart WiFi Plug,Home Automation,19.99,140,Compact smart WiFi plug with remote control and scheduling
+320,Electric Standing Desk Converter,Office Supplies,199.99,20,Adjustable electric standing desk converter with memory settings
+321,Smart Baby Monitor,Home Automation,129.99,50,WiFi-enabled smart baby monitor with HD video and two-way audio
+322,Portable Solar Charger,Electronics,49.99,100,Portable solar charger with dual USB ports and foldable design
+323,Electric Bread Maker,Kitchen,79.99,60,Automatic electric bread maker with multiple settings and timer
+324,Smart LED Flood Light,Home Automation,59.99,80,WiFi smart LED flood light with color changing and app control
+325,Portable Electric Heater,Home Appliances,29.99,90,Compact portable electric heater with adjustable thermostat
+326,Digital Picture Frame with WiFi,Electronics,99.99,40,WiFi digital picture frame with touchscreen and app control
+327,Electric Garlic Chopper,Kitchen,19.99,120,Rechargeable electric garlic chopper with stainless steel blades
+328,Smart Window Blinds,Home Automation,199.99,20,Motorized smart window blinds with remote control and app integration
+329,Electric Wine Chiller,Kitchen,99.99,30,Freestanding electric wine chiller with adjustable temperature
+330,Smart Home Light Switch,Home Automation,29.99,100,WiFi-enabled smart home light switch with app control
+331,Digital Food Dehydrator,Kitchen,89.99,40,Electric food dehydrator with adjustable temperature and timer
+332,Wireless Charging Dock,Electronics,39.99,80,Multi-device wireless charging dock for smartphones and smartwatches
+333,Electric Foot Spa,Personal Care,49.99,60,Electric foot spa with massage rollers and bubble function
+334,Smart Water Bottle with LED Display,Health,29.99,110,Smart water bottle with LED display and hydration tracking
+335,Portable Massage Gun,Health,99.99,70,Handheld portable massage gun with multiple attachments
+336,Electric Smokeless Grill,Kitchen,89.99,50,Indoor electric smokeless grill with adjustable temperature control
+337,Smart Home Doorbell,Home Automation,99.99,60,WiFi smart home doorbell with video and motion detection
+338,Electric Wine Opener with Foil Cutter,Kitchen,29.99,90,Rechargeable electric wine opener with built-in foil cutter
+339,Smart WiFi Outlet,Home Automation,19.99,120,WiFi-enabled smart outlet with energy monitoring and app control
+340,Electric Heated Car Seat Cover,Automotive,49.99,80,Electric heated car seat cover with adjustable heat settings
+341,Smart Window Sensor,Home Automation,24.99,130,WiFi smart window sensor with app alerts and automation
+342,Portable Electric Fan,Home Appliances,19.99,150,Rechargeable portable electric fan with multiple speed settings
+343,Smart Water Faucet Adapter,Home Automation,39.99,100,Smart water faucet adapter with app control and voice compatibility
+344,Electric Dog Fence,Pet Supplies,129.99,40,Wireless electric dog fence with adjustable boundary
+345,Smart Air Purifier,Home Appliances,199.99,30,WiFi-enabled smart air purifier with HEPA filter and app control
+346,Electric Heating Pad,Health,29.99,90,Electric heating pad with adjustable heat settings and auto shut-off
+347,Smart Light Bulb with Voice Control,Home Automation,19.99,140,WiFi smart light bulb with voice control and app integration
+348,Electric Kettle with Temperature Control,Kitchen,49.99,70,Stainless steel electric kettle with temperature control
+349,Smart WiFi Thermostat,Home Automation,149.99,40,WiFi-enabled smart thermostat with app control and scheduling
+350,Portable Electric Blender,Kitchen,29.99,110,USB rechargeable portable electric blender for smoothies
+351,Smart Door Lock with Fingerprint,Home Automation,199.99,30,Smart door lock with fingerprint recognition and app control
+352,Electric Griddle with Warming Tray,Kitchen,59.99,60,Non-stick electric griddle with warming tray and adjustable temperature
+353,Smart Garage Door Opener,Home Automation,99.99,50,WiFi-enabled smart garage door opener with app control
+354,Electric Heated Blanket for Car,Automotive,39.99,100,12V electric heated blanket for car with auto shut-off
+355,Smart WiFi Security Camera,Electronics,79.99,70,Outdoor smart WiFi security camera with night vision and motion detection
+356,Electric Egg Cooker,Kitchen,19.99,130,Automatic electric egg cooker with multiple cooking modes
+357,Smart Plug with Timer Function,Home Automation,24.99,140,WiFi smart plug with timer function and app control
+358,Portable Electric Grill,Outdoor,79.99,50,Compact portable electric grill with adjustable heat
+359,Smart LED Light Strip,Home Decor,29.99,120,WiFi-enabled smart LED light strip with color changing and app control
+360,Electric Pressure Washer with Hose Reel,Tools,159.99,30,High-power electric pressure washer with built-in hose reel
+361,Smart WiFi Light Switch with Dimmer,Home Automation,39.99,90,WiFi smart light switch with dimmer and app control
+362,Electric Water Flosser,Health,49.99,80,Rechargeable electric water flosser with multiple pressure settings
+363,Smart Pet Feeder,Pet Supplies,99.99,40,WiFi-enabled smart pet feeder with app control and camera
+364,Portable Air Conditioner with Remote,Home Appliances,299.99,20,Portable air conditioner with remote control and dehumidifier function
+365,Smart LED Desk Lamp with Wireless Charging,Office Supplies,59.99,70,Smart LED desk lamp with wireless charging pad and adjustable brightness
+366,Electric Cheese Grater with Container,Kitchen,29.99,80,Rechargeable electric cheese grater with built-in container
+367,Smart Home Security System with Cameras,Home Automation,299.99,30,DIY smart home security system with cameras and app control
+368,Electric Heated Socks,Clothing,39.99,100,Rechargeable electric heated socks with adjustable heat settings
+369,Smart WiFi Light Bulb with RGB,Home Automation,19.99,150,WiFi smart light bulb with RGB color changing and app control
+370,Electric Wine Dispenser,Kitchen,49.99,60,Automatic electric wine dispenser with aeration function
+371,Smart Outdoor Plug,Home Automation,39.99,90,WiFi-enabled smart outdoor plug with weatherproof design and app control
+372,Electric Facial Cleansing Brush,Personal Care,29.99,110,Rechargeable electric facial cleansing brush with multiple speed settings
+373,Smart Video Doorbell,Home Automation,149.99,40,WiFi-enabled smart video doorbell with two-way audio and app alerts
+374,Portable Electric Air Pump,Automotive,49.99,90,Rechargeable portable electric air pump for car tires and inflatables
+375,Smart Thermostat with Touch Screen and WiFi,Home Automation,199.99,30,WiFi-enabled smart thermostat with touch screen and app control
+376,Electric Heated Jacket,Clothing,149.99,50,Rechargeable electric heated jacket with adjustable heat settings
+377,Smart Indoor Camera,Home Automation,79.99,60,WiFi smart indoor camera with motion detection and night vision
+378,Portable Electric Heater with Thermostat,Home Appliances,39.99,80,Compact portable electric heater with adjustable thermostat
+379,Smart LED Ceiling Light,Home Automation,99.99,40,WiFi-enabled smart LED ceiling light with app control and voice compatibility
+380,Electric Foot Warmer,Health,29.99,90,Electric foot warmer with adjustable heat settings and soft fleece lining
+381,Smart WiFi Light Switch with Motion Sensor,Home Automation,49.99,70,WiFi smart light switch with built-in motion sensor and app control
+382,Electric Hand Warmer with Power Bank,Personal Care,39.99,100,Rechargeable electric hand warmer with built-in power bank
+383,Smart Air Quality Monitor,Health,99.99,40,WiFi-enabled smart air quality monitor with app alerts and real-time data
+384,Electric Heated Throw Blanket,Bedding,59.99,60,Soft electric heated throw blanket with adjustable heat settings
+385,Smart WiFi Plug with Energy Monitoring,Home Automation,24.99,140,WiFi-enabled smart plug with energy monitoring and app control
+386,Portable Electric Hot Pot,Kitchen,39.99,80,Compact portable electric hot pot with adjustable temperature
+387,Smart WiFi Light Bulb with Music Sync,Home Automation,29.99,120,WiFi-enabled smart light bulb with music sync and app control
+388,Electric Wok,Kitchen,49.99,70,Non-stick electric wok with adjustable temperature and lid
+389,Smart Video Doorbell with HD Camera,Home Automation,179.99,30,WiFi-enabled smart video doorbell with HD camera and app control
+390,Electric Heated Gloves,Clothing,49.99,90,Rechargeable electric heated gloves with adjustable heat settings
+391,Smart WiFi Light Strip with Remote,Home Decor,39.99,100,WiFi-enabled smart light strip with remote control and app integration
+392,Electric Water Heater,Home Appliances,199.99,40,Instant electric water heater with adjustable temperature control
+393,Smart Home Hub with Voice Control,Home Automation,149.99,30,Centralized smart home hub with voice control and app integration
+394,Electric Tea Maker,Kitchen,49.99,60,Automatic electric tea maker with multiple brew settings
+395,Smart WiFi Door Lock,Home Automation,199.99,40,WiFi-enabled smart door lock with keypad and app control
+396,Portable Electric Cooler,Outdoor,99.99,50,Portable electric cooler with dual power options
+397,Smart WiFi Light Bulb with Remote Control,Home Automation,29.99,120,WiFi-enabled smart light bulb with remote control and app integration
+398,Electric Heated Blanket with Remote,Home Appliances,79.99,40,Electric heated blanket with remote control and auto shut-off
+399,Smart WiFi Plug with Voice Control,Home Automation,19.99,160,WiFi-enabled smart plug with voice control and app integration
+400,Electric Pressure Cooker with Multiple Functions,Kitchen,129.99,30,Multi-functional electric pressure cooker with sauté, steam, and slow cook functions
+401,Smart WiFi Door Sensor,Home Automation,24.99,130,WiFi-enabled smart door sensor with app alerts and automation
+402,Portable Electric Lunch Box,Kitchen,39.99,80,Portable electric lunch box with dual compartments and heating function
+403,Smart WiFi Light Switch with Voice Control,Home Automation,39.99,90,WiFi-enabled smart light switch with voice control and app integration
+404,Electric Heated Blanket for Camping,Outdoor,69.99,50,Portable electric heated blanket with battery pack for camping
+405,Smart Home Security Camera with Floodlight,Home Automation,149.99,30,WiFi-enabled smart security camera with built-in floodlight and motion detection
+406,Electric Neck Massager,Health,59.99,70,Rechargeable electric neck massager with heat and vibration functions
+407,Smart WiFi Light Strip with Timer,Home Automation,29.99,120,WiFi-enabled smart light strip with timer function and app control
+408,Electric Cheese Grater with Adjustable Settings,Kitchen,29.99,90,Rechargeable electric cheese grater with adjustable coarseness settings
+409,Smart WiFi Thermostat with Energy Saving,Home Automation,149.99,40,WiFi-enabled smart thermostat with energy-saving modes and app control
+410,Portable Electric Kettle,Travel,39.99,60,Compact portable electric kettle with dual voltage for travel
+411,Smart WiFi Doorbell with Video,Home Automation,129.99,50,WiFi-enabled smart doorbell with video recording and app alerts
+412,Electric Heated Throw with Sherpa,Home Appliances,59.99,70,Electric heated throw with soft Sherpa lining and adjustable heat settings
+413,Smart WiFi Plug with Scheduling,Home Automation,24.99,140,WiFi-enabled smart plug with scheduling and app control
+414,Portable Electric Blender with USB,Kitchen,29.99,110,Rechargeable portable electric blender with USB charging
+415,Smart WiFi Light Bulb with Dimming,Home Automation,19.99,150,WiFi-enabled smart light bulb with dimming and app integration
+416,Electric Pressure Washer with Adjustable Nozzle,Tools,159.99,30,High-power electric pressure washer with adjustable nozzle and soap dispenser
+417,Smart Home Security System with Sensors,Home Automation,299.99,20,DIY smart home security system with door/window sensors and app control
+418,Electric Heated Mattress Pad with Dual Control,Bedding,79.99,40,Heated mattress pad with dual temperature control and auto shut-off
+419,Smart WiFi Camera with Pan and Tilt,Home Automation,89.99,50,WiFi-enabled smart camera with pan, tilt, and zoom functions
+420,Portable Electric Cooler and Warmer,Outdoor,99.99,60,Portable electric cooler and warmer with dual power options
+421,Smart WiFi Light Bulb with Scene Modes,Home Automation,29.99,120,WiFi-enabled smart light bulb with scene modes and app control
+422,Electric Water Flosser with Multiple Tips,Health,49.99,80,Rechargeable electric water flosser with multiple tips for different needs
+423,Smart Video Doorbell with Facial Recognition,Home Automation,179.99,30,WiFi-enabled smart video doorbell with facial recognition and app control
+424,Electric Heated Gloves with Touchscreen,Clothing,49.99,90,Rechargeable electric heated gloves with touchscreen compatibility
+425,Smart WiFi Light Strip with Voice Control,Home Automation,39.99,100,WiFi-enabled smart light strip with voice control and app integration
+426,Electric Wok with Temperature Control,Kitchen,49.99,70,Non-stick electric wok with adjustable temperature control and lid
+427,Smart Home Hub with Automation,Home Automation,149.99,40,Centralized smart home hub with automation and app control
+428,Electric Heated Foot Warmer,Health,29.99,90,Electric foot warmer with adjustable heat settings and soft fleece lining
+429,Smart WiFi Light Switch with Dimmer and Motion Sensor,Home Automation,49.99,70,WiFi-enabled smart light switch with dimmer, motion sensor, and app control
+430,Portable Electric Air Pump with LED Light,Automotive,49.99,90,Rechargeable portable electric air pump with built-in LED light
+431,Smart WiFi Door Lock with Keypad,Home Automation,199.99,40,WiFi-enabled smart door lock with keypad and app control
+432,Electric Tea Maker with Infuser,Kitchen,49.99,60,Automatic electric tea maker with built-in infuser and multiple brew settings
+433,Smart WiFi Outdoor Plug,Home Automation,39.99,90,WiFi-enabled smart outdoor plug with weatherproof design and app control
+434,Electric Heated Blanket with Timer Function,Home Appliances,59.99,60,Electric heated blanket with adjustable heat settings and timer function
+435,Smart WiFi Light Bulb with Group Control,Home Automation,19.99,150,WiFi-enabled smart light bulb with group control and app integration
+436,Electric Pressure Cooker with Sous Vide,Kitchen,129.99,40,Multi-functional electric pressure cooker with sous vide and steam functions
+437,Smart WiFi Light Strip with Music Sync and Timer,Home Automation,39.99,100,WiFi-enabled smart light strip with music sync, timer, and app control
+438,Portable Electric Blender with Multiple Cups,Kitchen,39.99,70,Rechargeable portable electric blender with multiple blending cups
+439,Smart WiFi Light Bulb with Adjustable Color Temperature,Home Automation,29.99,120,WiFi-enabled smart light bulb with adjustable color temperature and app control
+440,Electric Heated Mattress Pad with Auto Shut-Off,Bedding,79.99,50,Heated mattress pad with auto shut-off and adjustable heat settings
+441,Smart WiFi Plug with Voice Assistant Integration,Home Automation,24.99,140,WiFi-enabled smart plug with voice assistant integration and app control
+442,Electric Wine Dispenser with Aerator,Kitchen,49.99,60,Automatic electric wine dispenser with built-in aerator for improved taste
+443,Smart WiFi Light Strip with Remote Control and Timer,Home Automation,29.99,130,WiFi-enabled smart light strip with remote control and timer function
+444,Electric Heated Throw Blanket with Sherpa Lining,Home Appliances,59.99,60,Soft electric heated throw blanket with Sherpa lining and adjustable heat settings
+445,Smart WiFi Thermostat with Geofencing,Home Automation,149.99,40,WiFi-enabled smart thermostat with geofencing and app control
+446,Portable Electric Lunch Box with Dual Compartments,Kitchen,39.99,90,Portable electric lunch box with dual compartments and heating function
+447,Smart WiFi Light Bulb with Scene Control,Home Automation,29.99,120,WiFi-enabled smart light bulb with scene control and app integration
+448,Electric Heated Socks with Rechargeable Battery,Clothing,39.99,80,Rechargeable electric heated socks with adjustable heat settings
+449,Smart WiFi Door Lock with Fingerprint and Keypad,Home Automation,199.99,30,WiFi-enabled smart door lock with fingerprint recognition, keypad, and app control
+450,Electric Heated Gloves with Rechargeable Battery,Clothing,49.99,100,Rechargeable electric heated gloves with adjustable heat settings
+451,Smart WiFi Light Strip with Voice Assistant Integration,Home Automation,39.99,90,WiFi-enabled smart light strip with voice assistant integration and app control
+452,Electric Heated Mattress Pad with Dual Zone Control,Bedding,79.99,40,Heated mattress pad with dual zone control and adjustable heat settings
+453,Smart WiFi Plug with Energy Monitoring and Scheduling,Home Automation,24.99,140,WiFi-enabled smart plug with energy monitoring, scheduling, and app control
+454,Portable Electric Blender with Stainless Steel Blades,Kitchen,29.99,110,Rechargeable portable electric blender with stainless steel blades and USB charging
+455,Smart WiFi Light Bulb with Voice Control and Dimming,Home Automation,19.99,150,WiFi-enabled smart light bulb with voice control, dimming, and app integration
+456,Electric Pressure Washer with Foam Cannon and Adjustable Nozzle,Tools,159.99,30,High-power electric pressure washer with foam cannon, adjustable nozzle, and soap dispenser
+457,Smart Home Security System with Wireless Sensors and Cameras,Home Automation,299.99,20,DIY smart home security system with wireless door/window sensors, cameras, and app control
+458,Electric Heated Blanket with Auto Shut-Off and Timer,Home Appliances,59.99,70,Electric heated blanket with auto shut-off, timer, and adjustable heat settings
+459,Smart WiFi Light Bulb with RGB and Scene Modes,Home Automation,29.99,120,WiFi-enabled smart light bulb with RGB color changing, scene modes, and app control
+460,Electric Heated Mattress Pad with Auto Shut-Off and Dual Control,Bedding,79.99,50,Heated mattress pad with auto shut-off, dual control, and adjustable heat settings
+461,Smart WiFi Light Strip with Voice Assistant Integration and Music Sync,Home Automation,39.99,100,WiFi-enabled smart light strip with voice assistant integration, music sync, and app control
+462,Portable Electric Lunch Box with Heating Function and Dual Compartments,Kitchen,39.99,80,Portable electric lunch box with heating function, dual compartments, and easy carrying handle
+463,Smart WiFi Light Bulb with Group Control and Scene Modes,Home Automation,19.99,130,WiFi-enabled smart light bulb with group control, scene modes, and app integration
+464,Electric Heated Socks with Rechargeable Battery and Adjustable Heat Settings,Clothing,39.99,90,Rechargeable electric heated socks with adjustable heat settings and long battery life
+465,Smart WiFi Door Lock with Fingerprint, Keypad, and App Control,Home Automation,199.99,40,WiFi-enabled smart door lock with fingerprint recognition, keypad, and app control
+466,Electric Heated Gloves with Rechargeable Battery and Touchscreen Compatibility,Clothing,49.99,100,Rechargeable electric heated gloves with adjustable heat settings and touchscreen compatibility
+467,Smart WiFi Light Strip with Voice Assistant Integration and Timer Function,Home Automation,39.99,90,WiFi-enabled smart light strip with voice assistant integration, timer function, and app control
+468,Electric Heated Mattress Pad with Dual Zone Control and Auto Shut-Off,Bedding,79.99,40,Heated mattress pad with dual zone control, auto shut-off, and adjustable heat settings
+469,Smart WiFi Plug with Energy Monitoring, Scheduling, and Voice Control,Home Automation,24.99,140,WiFi-enabled smart plug with energy monitoring, scheduling, voice control, and app integration
+470,Portable Electric Blender with Stainless Steel Blades and USB Charging,Kitchen,29.99,110,Rechargeable portable electric blender with stainless steel blades, USB charging, and multiple blending cups
+471,Smart WiFi Light Bulb with Voice Control, Dimming, and Scene Modes,Home Automation,19.99,150,WiFi-enabled smart light bulb with voice control, dimming, scene modes, and app integration
+472,Electric Pressure Washer with Foam Cannon, Adjustable Nozzle, and Soap Dispenser,Tools,159.99,30,High-power electric pressure washer with foam cannon, adjustable nozzle, and soap dispenser
+473,Smart Home Security System with Wireless Sensors, Cameras, and App Control,Home Automation,299.99,20,DIY smart home security system with wireless door/window sensors, cameras, and app control
+474,Electric Heated Blanket with Auto Shut-Off, Timer, and Adjustable Heat Settings,Home Appliances,59.99,70,Electric heated blanket with auto shut-off, timer, and adjustable heat settings
+475,Smart WiFi Light Bulb with RGB, Scene Modes, and App Control,Home Automation,29.99,120,WiFi-enabled smart light bulb with RGB color changing, scene modes, and app control
+476,Electric Heated Mattress Pad with Auto Shut-Off, Dual Control, and Adjustable Heat Settings,Bedding,79.99,50,Heated mattress pad with auto shut-off, dual control, and adjustable heat settings
+477,Smart WiFi Light Strip with Voice Assistant Integration, Music Sync, and App Control,Home Automation,39.99,100,WiFi-enabled smart light strip with voice assistant integration, music sync, and app control
+478,Portable Electric Lunch Box with Heating Function, Dual Compartments, and Easy Carrying Handle,Kitchen,39.99,80,Portable electric lunch box with heating function, dual compartments, and easy carrying handle
+479,Smart WiFi Light Bulb with Group Control, Scene Modes, and App Integration,Home Automation,19.99,130,WiFi-enabled smart light bulb with group control, scene modes, and app integration
+480,Electric Heated Socks with Rechargeable Battery, Adjustable Heat Settings, and Long Battery Life,Clothing,39.99,90,Rechargeable electric heated socks with adjustable heat settings and long battery life
+
+
