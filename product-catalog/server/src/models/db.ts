@@ -4,8 +4,9 @@ import mongoose from 'mongoose';
 //
 import ProductSchema from './Product';
 import CategorySchema from './Category';
+import PreOrderSchema from './PreOrder';
 const models = {
-    ProductSchema, CategorySchema
+    ProductSchema, CategorySchema, PreOrderSchema
 }
 
 const ConnectDB = async (fastify:FastifyInstance, options: {uri:string}) =>{

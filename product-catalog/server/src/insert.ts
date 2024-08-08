@@ -9,9 +9,7 @@ const uri = 'mongodb://localhost:27017/product-catalog'
 const data = csvToJson.fieldDelimiter(',').getJsonFromCsv('./data/data.csv')
 
 const categoriesSet = new Set();
-console.log(data[0]);
 data.forEach(el => {
-    // console.log(el)
     categoriesSet.add(el.Category);
 });
 
@@ -19,8 +17,7 @@ async function insertData(){
     try{
         await mongoose.connect(uri)
         const count = await ProductSchema.where({}).countDocuments()
-        console.log(count);
-        /*
+        
         const insertCategory:{category_name:string}[] = []
         categoriesSet.forEach((cat) =>{
             insertCategory.push({category_name: cat as string});
@@ -49,7 +46,7 @@ async function insertData(){
             }
         });
         const proRes = await ProductSchema.insertMany(insertProduct);
-        */
+        
 
     }catch(error){
         console.log(error);

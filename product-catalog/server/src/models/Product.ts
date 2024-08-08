@@ -1,4 +1,4 @@
-import {Schema, ObjectId, model} from 'mongoose';
+import {Schema, model} from 'mongoose';
 
 export const Product = new Schema({
     product_name: {
@@ -21,7 +21,7 @@ export const Product = new Schema({
     description: {
         type: String
     }
-})
+}, {timestamps: true})
 
 const ProductSchema = model('product', Product);
 export default ProductSchema;

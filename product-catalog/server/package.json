@@ -10,7 +10,8 @@
     "test": "node --test test/**/*.test.js",
     "start": "fastify start -l info app.js",
     "dev-fastify": "fastify start -w -l info src/server.ts",
-    "dev": "nodemon src/server.ts"
+    "dev": "nodemon src/server.ts",
+    "dev-js": "nodemon --es-module-specifier-resolution=node src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,7 @@
     "fastify": "^4.26.1",
     "fastify-cli": "^6.3.0",
     "fastify-plugin": "^4.5.1",
+    "mercurius": "^14.1.0",
     "mongoose": "^8.5.2",
     "nodemon": "^3.1.4",
     "pino": "^9.3.2"

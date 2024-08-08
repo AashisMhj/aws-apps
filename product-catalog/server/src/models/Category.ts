@@ -5,7 +5,7 @@ export const Category = new Schema({
         type: String,
         required: true
     }
-});
+}, {timestamps: true});
 
 const CategorySchema = model('category', Category);
 export default CategorySchema;
