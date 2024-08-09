@@ -14,6 +14,7 @@ type Mutation {
 type PreOrderCount{
     product_name: String!
     preOrderCount: Int
+    ordered_quantity: Int
 }
 type Product {
     _id: ID!

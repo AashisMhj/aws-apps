@@ -10,6 +10,10 @@ export const PreOrder = new Schema({
         ref: 'product',
         required: true
     },
+    quantity: {
+        type: Number,
+        required: true
+    }
 
 },{timestamps: true});
 

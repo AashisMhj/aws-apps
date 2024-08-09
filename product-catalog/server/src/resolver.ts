@@ -60,7 +60,8 @@ const resolvers = {
                     {
                         $project: {
                             product_name: 1,
-                            preOrderCount: {"$ifNull": [{$size: '$preorder'}, 0]}
+                            preOrderCount: {"$ifNull": [{$size: '$preorder'}, 0]},
+                            order_quantity: 0
                         }
                     }
                 ]);
@@ -91,8 +92,9 @@ const resolvers = {
                     },
                     {
                         $project: {
-                              product_name: 1,
-                              preOrderCount: {"$ifNull": [{$size: '$preorder'}, 0]}
+                            product_name: 1,
+                            preOrderCount: {"$ifNull": [{$size: '$preorder'}, 0]},
+                            order_quantity: {$sum: '$quantity'}
                         }
                     }
                 ]);
