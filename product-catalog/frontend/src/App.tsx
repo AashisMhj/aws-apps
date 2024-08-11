@@ -26,7 +26,7 @@ function App() {
         setProducts(res.products);
 
       } catch (error) {
-        console.log(error);
+        console.trace(error);
       }
     })()
   }, []);

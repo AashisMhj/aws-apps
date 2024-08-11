@@ -1,21 +1,17 @@
-import mongoose from 'mongoose';
-import Product from './models/Product';
-import CategorySchema, { Category } from './models/Category';
 import  csvToJson from 'convert-csv-to-json';
 import ProductSchema from './models/Product';
+import CategorySchema from './models/Category';
+import path from 'path';
 
-
-const uri = 'mongodb://localhost:27017/product-catalog'
-const data = csvToJson.fieldDelimiter(',').getJsonFromCsv('./data/data.csv')
+const data = csvToJson.fieldDelimiter(',').getJsonFromCsv(path.resolve(__dirname, '../data/data.csv'))
 
 const categoriesSet = new Set();
 data.forEach(el => {
     categoriesSet.add(el.Category);
 });
 
-async function insertData(){
+export async function insertData(){
     try{
-        await mongoose.connect(uri)
         const count = await ProductSchema.where({}).countDocuments()
         
         const insertCategory:{category_name:string}[] = []
@@ -51,9 +47,6 @@ async function insertData(){
     }catch(error){
         console.log(error);
     }finally{
-        await mongoose.disconnect();
-        console.log('Disconnected')
+        console.log('Inserted Final Block')
     }
 }
-
-insertData();

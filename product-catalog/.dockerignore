@@ -1,0 +1,9 @@
+.vscode/
+cdk-product-catalog
+dev-files/
+frontend/dist/
+frontend/node_modules/
+server/dist/
+server/node_modules/
+ss/
+*.md

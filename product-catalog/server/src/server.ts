@@ -10,19 +10,19 @@ import Routes from './routes/index';
 
 const PortEnv = process.env.PORT || '5000' ;
 const port = parseInt(PortEnv)
-const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/product-catalog';
+const uri = process.env.MONGODB_URI || 'mongodb://172.18.0.2/product-catalog';
 const server = fastify({
     logger: pino({ level: 'info' })
 });
 
 server.register(cors, {})
+server.register(Routes);
 server.register(DBPlugin, {uri});
 server.register(mercurius,{
     schema,
     resolvers,
     graphiql: 'graphiql'
 })
-server.register(Routes);
 
 
 const start = async () => {
