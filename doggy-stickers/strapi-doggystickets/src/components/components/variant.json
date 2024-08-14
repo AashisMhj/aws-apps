@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_components_variants",
+  "info": {
+    "displayName": "Variant",
+    "icon": "attachment"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "variant 3x3",
+        "variant 4x4",
+        "variant 5x5"
+      ]
+    },
+    "price": {
+      "type": "integer"
+    }
+  }
+}
