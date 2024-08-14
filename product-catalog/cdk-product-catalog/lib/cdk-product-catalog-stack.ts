@@ -7,43 +7,13 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as docdb from 'aws-cdk-lib/aws-docdb';
 import { Construct } from 'constructs';
+import { ECRStack } from './ECRStack';
 
 export class CdkProductCatalogStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
     const newVPC = ec2.Vpc.fromLookup(this, 'defaultVPC', {isDefault: true});
-
-    // const newVPC = new ec2.Vpc(this, 'MyVpc', {
-    //   maxAzs: 2
-    // });
-
-
-    const dbSecurityGroup = new ec2.SecurityGroup(this, 'DocDBSecurityGroup', {
-      vpc: newVPC,
-      allowAllOutbound: true,
-      description: 'Security Group for document DB',
-    });
-
-    dbSecurityGroup.addIngressRule(ec2.Peer.ipv4(newVPC.vpcCidrBlock), ec2.Port.tcp(27107), 'Allow MongoDB access');
-
-    const cluster = new docdb.CfnDBCluster(this, 'DocDBCluster', {
-      masterUsername: process.env.DB_USERNAME,
-      masterUserPassword: process.env.DB_PASSWORD,
-      vpcSecurityGroupIds: [dbSecurityGroup.securityGroupId],
-      dbSubnetGroupName: new docdb.CfnDBSubnetGroup(this, 'DocDBDSubnetGroup', {
-        dbSubnetGroupDescription: 'Subnet group for DocumentDB',
-        subnetIds: newVPC.publicSubnets.slice(0,2).map(subnet => subnet.subnetId)
-      }).ref,
-      availabilityZones: newVPC.availabilityZones.slice(0,2),
-      storageEncrypted: true
-    });
-
-    // Not able to create cluster
-    // new docdb.CfnDBInstance(this, 'MyDocDbInstance', {
-    //   dbClusterIdentifier: cluster.ref,
-    //   dbInstanceClass: ec2.InstanceClass.T3
-    // })
 
 
     const myQueue = new sqs.Queue(this, 'MyQueue', {
@@ -60,8 +30,8 @@ export class CdkProductCatalogStack extends Stack {
         QUEUE_URL: myQueue.queueUrl,
         DB_USERNAME: process.env.DB_USERNAME || '',
         DB_PASSWORD: process.env.DB_PASSWORD || '',
-        DB_CLUSTER_ENDPOINT: cluster.attrEndpoint,
-        DB_CLUSTER_PORT: cluster.attrPort,
+        // DB_CLUSTER_ENDPOINT: cluster.attrEndpoint,
+        // DB_CLUSTER_PORT: cluster.attrPort,
         DB_NAME: process.env.DB_NAME || 'product-catalog'
       }
     });
@@ -106,6 +76,13 @@ export class CdkProductCatalogStack extends Stack {
     const postMessage = api.root.addResource('pre-order');
     postMessage.addMethod('POST', sqsIntegration, {
       methodResponses: [{statusCode: '200'}]
-    })
+    });
+
+    // new ECRStack(this, 'ECRStack', {
+    //   env: {
+    //     account: process.env.AWS_ACCOUNT_ID,
+    //     region: process.env.AWS_REGION
+    //   }
+    // })
   }
 }

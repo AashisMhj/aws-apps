@@ -1,5 +1,6 @@
 import fp from 'fastify-plugin';
 import { FastifyInstance } from 'fastify';
+import fs from 'node:fs';
 import mongoose from 'mongoose';
 //
 import ProductSchema from './Product';
@@ -10,22 +11,16 @@ const models = {
     ProductSchema, CategorySchema, PreOrderSchema
 }
 
-const ConnectDB = async (fastify:FastifyInstance, options: {uri:string}) =>{
+const ConnectDB = async (fastify: FastifyInstance, options: { uri: string }) => {
     try {
-        // mongoose.connection.on('connected', ()=>{
-        //     fastify.log.info({actor: 'MongoDB'}, 'connected');
-        // });
-        // mongoose.connection.on('disconnected', () => {
-        //     fastify.log.error({ actor: 'MongoDB' }, 'disconnected');
-        // });
-        // mongoose.connection.on('error', (error)=>{
-        //     console.log(error);
-        // });
         console.log(options.uri);
-        const db = await mongoose.connect(options.uri, {});
+        const db = await mongoose.connect(options.uri, {
+            tls: true,
+            tlsCAFile:  `./global-bundle.pem`
+        });
         // insert data
         const products = await ProductSchema.countDocuments();
-        if(products === 0){
+        if (products === 0) {
             await insertData();
         }
         // decorates fastify with our model

@@ -7,10 +7,12 @@ import DBPlugin from './models/db';
 import schema from './schema';
 import resolvers from './resolver';
 import Routes from './routes/index';
+import * as dotenv from 'dotenv';
 
+dotenv.config();
 const PortEnv = process.env.PORT || '5000' ;
 const port = parseInt(PortEnv)
-const uri = process.env.MONGODB_URI || 'mongodb://172.18.0.2/product-catalog';
+const uri = process.env.DB_URL || 'mongodb://172.18.0.2/product-catalog';
 const server = fastify({
     logger: pino({ level: 'info' })
 });
