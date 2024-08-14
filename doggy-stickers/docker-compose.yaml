@@ -1,0 +1,41 @@
+version: "3"
+services:
+  strapi:
+    container_name: strapi-dockerstickers
+    build: 
+      context: ./strapi-doggystickets
+    image: strapi-dockerstickers:latest
+    restart: unless-stopped
+    env_file: ./strapi-doggystickets/.env.docker
+    environment:
+      DATABASE_CLIENT: ${DATABASE_CLIENT}
+      DATABASE_HOST: 172.18.0.2
+      DATABASE_PORT: ${DATABASE_PORT}
+      DATABASE_NAME: ${DATABASE_NAME}
+      DATABASE_USERNAME: ${DATABASE_USERNAME}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+      JWT_SECRET: ${JWT_SECRET}
+      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
+      APP_KEYS: ${APP_KEYS}
+      NODE_ENV: ${NODE_ENV}
+    ports:
+      - "1337:1337"
+    networks:
+      - my-network
+  nextjs:
+    container_name: nextjs-dockerstickers
+    build:
+      context: ./next-app-doggystickers
+    image: nextjs-dockerstickers:latest
+    restart: unless-stopped
+    env_file: ./next-app-doggystickers/.env.docker
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+    networks:
+      - my-network
+networks:
+  my-network:
+    external: true
+    
