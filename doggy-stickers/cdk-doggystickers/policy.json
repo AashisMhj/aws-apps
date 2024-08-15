@@ -1,0 +1,14 @@
+{
+  "Sid": "AllowCodeBuildPush",
+  "Effect": "Allow",
+  "Principal": {
+      "AWS": "arn:aws:iam::{{account_id}}:role/service-role/{{role_name}}"
+  },
+  "Action": [
+      "ecr:BatchCheckLayerAvailability",
+      "ecr:CompleteLayerUpload",
+      "ecr:UploadLayerPart",
+      "ecr:InitiateLayerUpload",
+      "ecr:PutImage"
+  ]
+}
