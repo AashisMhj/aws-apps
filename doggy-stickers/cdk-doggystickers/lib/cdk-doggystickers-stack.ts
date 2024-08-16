@@ -24,7 +24,7 @@ export class CdkDoggystickersStack extends cdk.Stack {
     });
 
     const strapiEcrRepo = new ecr.Repository(this, 'StrapiRepo', { repositoryName: 'strapi-doggy-sticker' });
-    const nextjsEcrRepo = new ecr.Repository(this, 'NextjsRepo', { repositoryName: 'nextjs-repo-stickers' });
+    const nextjsEcrRepo = new ecr.Repository(this, 'NextjsRepo', { repositoryName: 'nextjs-doggy-stickers' });
 
     const strapiCodeRepo = codecommit.Repository.fromRepositoryName(this, 'StrapiCodeCommit', 'strapi-doggy-stickers');
     const nextjsCodeRepo = codecommit.Repository.fromRepositoryName(this, 'NextjsCodeCommit', 'nextjs-doggy-stickers');
