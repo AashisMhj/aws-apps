@@ -3,7 +3,7 @@ version: 0.2
 env:
   variables:
     IMAGE_REPO_NAME: "strapi-docker"
-    REPOSITORY_URI: "471112830029.dkr.ecr.us-east-1.amazonaws.com/cdk-hnb659fds-container-assets-471112830029-us-east-1"
+    REPOSITORY_URI: ""
 phases:
   pre_build:
     commands:

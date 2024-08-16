@@ -29,19 +29,16 @@ export class CdkDoggystickersStack extends cdk.Stack {
     const strapiCodeRepo = codecommit.Repository.fromRepositoryName(this, 'StrapiCodeCommit', 'strapi-doggy-stickers');
     const nextjsCodeRepo = codecommit.Repository.fromRepositoryName(this, 'NextjsCodeCommit', 'nextjs-doggy-stickers');
 
-    const buildOptions = (ecr_repo_uri: string) => (
+    const buildOptions = (ecr_repo_uri: string, image_name:string) => (
       {
         environment: {
           buildImage: codebuild.LinuxBuildImage.STANDARD_5_0,
           privileged: true, // Required for Docker builds
         },
         environmentVariables: {
-          'ECR_REPO_URI': {
-            value: ecr_repo_uri,
-          },
-          'IMAGE_TAG': {
-            value: 'latest',
-          },
+          'ECR_REPO_URI': {value: ecr_repo_uri,},
+          'IMAGE_TAG': {value: 'latest',},
+          'IMAGE_NAME': {value: image_name}
         },
         buildSpec: codebuild.BuildSpec.fromObject({
           version: '0.2',
@@ -57,15 +54,16 @@ export class CdkDoggystickersStack extends cdk.Stack {
               commands: [
                 'echo Build started on `date`',
                 'echo Building the Docker image...',
-                'docker build -t $ECR_REPO_URI:latest .',
+                'docker build -t $IMAGE_NAME:latest .',
+                'docker tag $IMAGE_NAME $ECR_REPO_URI/$IMAGE_NAME:latest'
               ],
             },
             post_build: {
               commands: [
                 'echo Build completed on `date`',
                 'echo Pushing the Docker image to ECR...',
-                'docker push $ECR_REPO_URI:latest',
-                'echo Docker image successfully pushed to $ECR_REPO_URI:latest',
+                'docker push $ECR_REPO_URI/$IMAGE_NAME:latest',
+                'echo Docker image successfully pushed to $ECR_REPO_URI/$IMAGE_NAME:latest',
               ],
             },
           },
@@ -77,8 +75,8 @@ export class CdkDoggystickersStack extends cdk.Stack {
     )
 
     // Create a CodeBuild Project
-    const strapiBuildProject = new codebuild.PipelineProject(this, 'StrapiBuild',buildOptions(strapiEcrRepo.repositoryUri));
-    const nextjsBuildProject = new codebuild.PipelineProject(this, 'NextjsBuild',buildOptions(nextjsEcrRepo.repositoryUri));
+    const strapiBuildProject = new codebuild.PipelineProject(this, 'StrapiBuild',buildOptions(cdk.Fn.select(0, cdk.Fn.split('/', strapiEcrRepo.repositoryUri)), 'strapi-image'));
+    const nextjsBuildProject = new codebuild.PipelineProject(this, 'NextjsBuild',buildOptions(cdk.Fn.select(0, cdk.Fn.split('/', nextjsEcrRepo.repositoryUri)), 'next-image'));
 
     // Grant CodeBuild access to the ECR repository
     strapiEcrRepo.grantPullPush(strapiBuildProject);
