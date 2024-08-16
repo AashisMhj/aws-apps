@@ -34,3 +34,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# for sub tree
+amplify-todo-app-gen1/
+cognito-login/
+doggy-stickers/
+product-catalog/

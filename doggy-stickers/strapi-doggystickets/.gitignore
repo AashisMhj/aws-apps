@@ -114,3 +114,10 @@ dist
 build
 .strapi-updater.json
 .strapi-cloud.json
+
+
+# for sub tree
+amplify-todo-app-gen1/
+cognito-login/
+doggy-stickers/
+product-catalog/
