@@ -8,6 +8,7 @@ async function requestAPI(url:string, options:RequestInit,){
     let fetchURL = API_URL+'/api/'+url;
 
     const fetchOptions:RequestInit = {
+        cache: 'no-cache',
         method: 'GET',
         headers: {
             "Authorization": `bearer ${TOKEN}`,

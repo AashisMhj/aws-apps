@@ -1,22 +1,22 @@
-import { MouseEvent, useState } from 'react'
+'use client'
+import { ChangeEvent, MouseEvent, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { useCartContext } from '@/context/Cart.context'
 import { ImageType, ProductType, VariantType } from '@/types'
 
 type ProductFormType = {
-    title: string,
-    slug: string,
-    variants: VariantType[],
-    setVariantPrice: (variant_price:number)=>void
-    mainImg: ImageType
+  slug: string,
+  product_id: number
+  variants: VariantType[],
+  selected_variant_index: number,
+  setSelectedVariantIndex: (new_index: number) => void
+  mainImg: ImageType
 }
 
-export default function ProductForm({ title, slug, variants, setVariantPrice, mainImg }:ProductFormType) {
+export default function ProductForm({ variants, product_id, selected_variant_index, setSelectedVariantIndex }: ProductFormType) {
   const [quantity, setQuantity] = useState(1)
-  const [variantId, setVariantId] = useState(variants[0].id)
-  const [variant, setVariant] = useState(variants[0])
-  const {addToCart} = useCartContext()
+  const { addToCart } = useCartContext()
   const isLoading = false;
 
   const atcBtnStyle = isLoading ?
@@ -26,39 +26,15 @@ export default function ProductForm({ title, slug, variants, setVariantPrice, ma
     `pt-3 pb-2 bg-palette-primary text-white w-full mt-2 rounded-sm font-primary font-semibold text-xl flex 
                       justify-center items-baseline  hover:bg-palette-dark`
 
-  function handleSizeChange(e:number) {
-    setVariantId(e)
-    // send back size change
-    // const selectedVariant = variants.filter(v => v.node.id === e).pop()
-    // setVariantPrice(selectedVariant.node.price)
-
-    // // update variant
-    // setVariant(selectedVariant)
+  function handleVariantChange(e: ChangeEvent<HTMLSelectElement>) {
+    const variant_index = parseInt(e.target.value);
+    setSelectedVariantIndex(variant_index);
   }
 
   async function handleAddToCart() {
-    // const varId = variant.node.id
-//     // update store context
-//     if (quantity !== '') {
-//       addToCart({
-//         productTitle: title,
-//         productHandle: handle,
-//         productImage: mainImg,
-//         variantId: varId,
-//         variantPrice: variant.node.price,
-//         variantTitle: variant.node.title,
-//         variantQuantity: quantity
-//       })
-//     }
+    addToCart(product_id, selected_variant_index, quantity);
   }
 
-  function updateQuantity(e:string) {
-    // if (e === '') {
-    //   setQuantity('')
-    // } else {
-    //   setQuantity(Math.floor(e))
-    // }
-  }
 
   return (
     <div className="w-full">
@@ -73,8 +49,12 @@ export default function ProductForm({ title, slug, variants, setVariantPrice, ma
             min="1"
             step="1"
             value={quantity}
-            onChange={(e) => updateQuantity(e.target.value)}
-            className="text-gray-900 form-input border border-gray-300 w-16 rounded-sm focus:border-palette-light focus:ring-palette-light"
+            onChange={(event) => {
+              const parsedInt = parseInt(event.target.value);
+              if (isNaN(parsedInt)) setQuantity(1)
+              else setQuantity(parsedInt)
+            }}
+            className="text-gray-900 form-input border border-gray-300 w-20 rounded-sm focus:border-palette-light focus:ring-palette-light"
           />
         </div>
         <div className="flex flex-col items-start space-y-1 flex-grow">
@@ -82,24 +62,25 @@ export default function ProductForm({ title, slug, variants, setVariantPrice, ma
           <select
             id="size-selector"
             name="size-selector"
-            onChange={(event) => handleSizeChange(parseInt(event.target.value))}
-            value={variantId}
+            onChange={handleVariantChange}
+            value={selected_variant_index}
             className="form-select border border-gray-300 rounded-sm w-full text-gray-900 focus:border-palette-light focus:ring-palette-light"
           >
             {
-              variants.map(item => (
+              variants.map((item, index) => (
                 <option
-                  id={item.id+''}
+                  id={item.id + ''}
                   key={item.id}
-                  value={item.id}
+                  value={index}
                 >
-                  {item.type}
+                  {item.type.replace('variant', '')} (price: {item.price})
                 </option>
               ))
             }
           </select>
         </div>
       </div>
+
       <button
         className={atcBtnStyle}
         aria-label="cart-button"
@@ -108,6 +89,16 @@ export default function ProductForm({ title, slug, variants, setVariantPrice, ma
         Add To Cart
         <FontAwesomeIcon icon={faShoppingCart} className="w-5 ml-2" />
       </button>
+      <div className='my-2 text-xl text-center'>
+        {
+          variants[selected_variant_index] && <span>
+            {
+              `Total:  ${variants[selected_variant_index].price * quantity} `
+            }
+          </span>
+
+        }
+      </div>
     </div>
   )
 }

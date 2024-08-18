@@ -10,22 +10,22 @@ type ProductDetailsProps = {
 }
 
 function ProductDetails({ productData }:ProductDetailsProps) {
-  const [variantPrice, setVariantPrice] = useState(productData.attributes.variant[0].price)
-
+  const [selected_variant_index, setSelectedVariantIndex] = useState(0)
   return (
     <div className="flex flex-col justify-between h-full w-full md:w-1/2 max-w-xs mx-auto space-y-4 min-h-128">
       <BackToProductButton />
       <ProductInfo 
-        title={productData.attributes.variant[0].type}
+        title={productData.attributes.title}
         description={productData.attributes.short_description}
-        price={variantPrice}
+        price={productData.attributes.variant[selected_variant_index]?.price}
       />
       <ProductForm 
-        title={productData.attributes.title}
+        product_id={productData.id}
         slug={productData.attributes.slug}
         variants={productData.attributes.variant} 
         mainImg={productData.attributes.main_image.data}
-        setVariantPrice={setVariantPrice}
+        selected_variant_index={selected_variant_index}
+        setSelectedVariantIndex={setSelectedVariantIndex}
       />
     </div>
   )

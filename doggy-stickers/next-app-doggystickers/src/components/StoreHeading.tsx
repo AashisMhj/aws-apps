@@ -1,4 +1,5 @@
 import PageTitle from '@/components/PageTitle'
+import { useCartContext } from '@/context/Cart.context'
 
 export default function StoreHeading() {
   return (

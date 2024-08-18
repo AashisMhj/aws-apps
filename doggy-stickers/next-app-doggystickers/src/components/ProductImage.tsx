@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { ImageType } from '@/types'
+import { imageResolver } from '@/helper'
 
 type ProductImageProps = {
   images: ImageType[],
@@ -27,10 +28,11 @@ function ProductImage({ images, main_image }: ProductImageProps) {
     <div className="w-full md:w-1/2 max-w-md border border-palette-lighter bg-white rounded shadow-lg">
       <div className="relative h-96">
         <Image
-          src={`${API_URL}${main_image.attributes.url}`}
+          src={imageResolver(main_image)}
           alt={main_image.attributes.alternativeText || 'alt text'}
-          layout="fill"
-          className="transform duration-500 ease-in-out hover:scale-105"
+          height={500}
+          width={500}
+          className="transform duration-500 ease-in-out hover:scale-105 h-full w-full"
         />
       </div>
       <div className="relative flex border-t border-palette-lighter">
@@ -54,10 +56,11 @@ function ProductImage({ images, main_image }: ProductImageProps) {
                 onClick={() => setCurrentMainImage(imgItem)}
               >
                 <Image
-                  src={`${API_URL}${imgItem.attributes.url}`}
+                  src={imageResolver(imgItem)}
                   alt={imgItem.attributes.alternativeText || ''}
-                  layout="fill"
-                  className=""
+                  width={160}
+                  height={128}
+                  className="h-full w-full"
                 />
               </button>
             ))

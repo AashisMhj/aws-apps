@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Price from '@/components/Price'
 import { ProductType } from '@/types'
+import { imageResolver } from '@/helper';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
@@ -23,7 +24,7 @@ export default function ProductCard({ product }:ProductCardProps) {
       <div className="h-120 w-72 rounded shadow-lg mx-auto border border-palette-lighter">
         <div className="h-72 border-b-2 border-palette-lighter relative">
           <Image
-            src={`${API_URL}${product.attributes.main_image.data.attributes.url}`}
+            src={imageResolver(product.attributes.main_image.data)}
             alt={product.attributes.main_image.data.attributes.alternativeText || title}
             layout="fill"
             className="transform duration-500 ease-in-out hover:scale-110"
