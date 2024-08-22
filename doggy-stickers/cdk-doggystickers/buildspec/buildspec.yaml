@@ -1,0 +1,28 @@
+version: 0.2
+
+env:
+  variables:
+    IMAGE_REPO_NAME: "strapi-docker"
+    REPOSITORY_URI: ""
+phases:
+  pre_build:
+    commands:
+      - echo "Pre build phase"
+      - echo $ECR_REPO_URI
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin $ECR_REPO_URI
+  build:
+    commands:
+      - echo "Building started on `date`"
+      - docker build -t $IMAGE_NAME:latest .
+      - echo $ECR_REPO_URI/$IMAGE_NAME:latest
+      - docker tag $IMAGE_NAME $ECR_REPO_URI/$IMAGE_NAME:latest
+      - docker push $ECR_REPO_URI/$IMAGE_NAME:latest
+      
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: yes
