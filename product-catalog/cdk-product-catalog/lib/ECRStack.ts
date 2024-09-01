@@ -19,7 +19,7 @@ export class ECRStack extends Stack {
         const project = new codebuild.Project(this, 'ProductCatalogProject', {
             source: codebuild.Source.codeCommit({ repository: repo }),
             environment: {
-                buildImage: codebuild.LinuxArmBuildImage.AMAZON_LINUX_2_STANDARD_3_0,
+                buildImage: codebuild.LinuxBuildImage.AMAZON_LINUX_2_4,
                 privileged: true, // required to run docker
             },
             environmentVariables: {

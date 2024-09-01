@@ -59,7 +59,6 @@ async function refreshToken(refreshToken:string){
 // logger middleware
 app.use((req:Request, res:Response, next:NextFunction)=>{
     // TODO create a auth validation middleware
-    // TODO log request
     putLog({
         timestamp: Date.now(),
         message: JSON.stringify({message: `${req.method} called on ${req.url}`, type: 'info'})

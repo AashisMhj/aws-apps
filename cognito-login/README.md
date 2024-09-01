@@ -1,7 +1,7 @@
 # Cognito Login
 React and Node App to show case user authentication with AWS Cognito.
 
-## Features
+## Application Features
 - Login and Registration
 - API Gateway integration with cognito
 - Profile Update

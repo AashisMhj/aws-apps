@@ -1,6 +1,0 @@
-# Commands
-
-## Docker commands
-```bash
-
-```

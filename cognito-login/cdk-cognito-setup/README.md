@@ -7,6 +7,7 @@
 - Cognito
 - API Gateway
 
+## Setup
 ## prerequisite
 - CDK cli
 - AWS Account

@@ -1,8 +1,27 @@
-# Welcome to your CDK TypeScript project
+# CDK DoggyStickers
 
-This is a blank project for CDK development with TypeScript.
+## Technologies
+- Typescript
+- CDK
+- RDS
+- ECS
+- CodeBuild
+- CodePipeline
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Setup 
+## Prerequisite
+- CDK cli
+- AWS Account
+- aws credential 
+
+```bash
+## install packages
+pnpm install
+## setup for cdk
+cdk bootstrap
+## deploy to cdk
+cdk deploy
+```
 
 ## Useful commands
 
