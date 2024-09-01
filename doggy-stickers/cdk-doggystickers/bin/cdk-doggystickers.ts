@@ -2,6 +2,10 @@
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
 import { CdkDoggystickersStack } from '../lib/cdk-doggystickers-stack';
+import { ECSStack } from '../lib/ECSStack';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = new cdk.App();
 new CdkDoggystickersStack(app, 'CdkDoggystickersStack', {
@@ -19,3 +23,10 @@ new CdkDoggystickersStack(app, 'CdkDoggystickersStack', {
 
   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
 });
+
+new ECSStack(app, 'CDKECSStack', {
+  env: {
+    account: process.env.AWS_ACCOUNT_ID,
+    region: 'us-east-1'
+  }
+})

@@ -82,7 +82,7 @@ export class CdkDoggystickersStack extends cdk.Stack {
 
     // Create a CodeBuild Project
     const strapiBuildProject = new codebuild.PipelineProject(this, 'StrapiBuild',
-      buildOptions(cdk.Fn.select(0, cdk.Fn.split('/', strapiEcrRepo.repositoryUri)), 'strapi-image', {
+      buildOptions(cdk.Fn.select(0, cdk.Fn.split('/', strapiEcrRepo.repositoryUri)), 'strapi-doggy-stickers', {
         PORT: {value:  '80'},
         APP_KEYS: {value:  process.env.APP_KEYS || ''},
         API_TOKEN_SALT: {value:  process.env.API_TOKEN_SALT || ''},
@@ -101,7 +101,7 @@ export class CdkDoggystickersStack extends cdk.Stack {
       })
     );
     const nextjsBuildProject = new codebuild.PipelineProject(this, 'NextjsBuild',
-      buildOptions(cdk.Fn.select(0, cdk.Fn.split('/', nextjsEcrRepo.repositoryUri)), 'next-image', {
+      buildOptions(cdk.Fn.select(0, cdk.Fn.split('/', nextjsEcrRepo.repositoryUri)), 'nextjs-doggy-stickers', {
         NEXT_PUBLIC_API_URL: { value: process.env.NEXT_PUBLIC_API_URL || ''},
         API_TOKEN:{ value: process.env.API_TOKEN || ''},
       })
