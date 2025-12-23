@@ -4,7 +4,9 @@ import os
 import aws_cdk as cdk
 
 from api_meter.api_meter_stack import ApiMeterStack
+from dotenv import load_dotenv
 
+load_dotenv()
 
 app = cdk.App()
 ApiMeterStack(app, "ApiMeterStack",
