@@ -15,7 +15,9 @@ class ApiMeterStack(Stack):
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
 
-        
+        # API Gateway declaration
+        proxy_api = apigw.RestApi(self, "CountryProxyApi")
+
         # Dynamodb Tables
         user_table = dynamodb.Table(
             self, "UserTable",
@@ -55,7 +57,7 @@ class ApiMeterStack(Stack):
             self, "AuthorizerFunction",
             runtime=_lambda.Runtime.PYTHON_3_14,
             handler="authorizer.handler",
-            code=_lambda.Code.from_asset("lambda"),
+            code=_lambda.Code.from_asset("api_meter/lambda"),
             environment={
                 "TABLE_NAME": user_table.table_name
             }
@@ -67,31 +69,29 @@ class ApiMeterStack(Stack):
             results_cache_ttl=Duration.seconds(0)
         )
 
-        # Register API
-
+        # Register Lambda
         register_handler = _lambda.Function(
             self, "AuthHandler",
             runtime=_lambda.Runtime.PYTHON_3_14,
-            code=_lambda.Code.from_asset("lambda"),
+            code=_lambda.Code.from_asset("api_meter/lambda"),
             handler="register.handler",
             environment={
                 "TABLE_NAME": user_table.table_name
             }
         )
         user_table.grant_write_data(register_handler)
-        registerApi = apigw.LambdaRestApi(self, "RegisterApi", handler=register_handler, proxy=False)
-        register = registerApi.root.add_resource("register")
-        register.add_method("POST")
+       
 
-        # Proxy API
+        # Proxy Lambda
         proxy_fn = _lambda.Function(
             self, "ProxyFunction",
             runtime=_lambda.Runtime.PYTHON_3_14,
             handler="proxy.handler",
-            code=_lambda.Code.from_asset("lambda")
+            code=_lambda.Code.from_asset("api_meter/lambda")
         )
+        user_table.grant_read_data(proxy_fn)
 
-        proxy_api = apigw.RestApi(self, "ProxyApi")
+        register = proxy_api.root.add_resource("register")
+        register.add_method("POST", apigw.LambdaIntegration(register_handler))
         resource  = proxy_api.root.add_resource("data")
-
-        resource.add_method("GET", apigw.LambdaIntegration(business_fn), authorizer=authorizer)
+        resource.add_method("GET", apigw.LambdaIntegration(proxy_fn), authorizer=authorizer)
