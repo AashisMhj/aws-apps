@@ -7,7 +7,7 @@ from api_meter.api_meter_stack import ApiMeterStack
 from dotenv import load_dotenv
 
 load_dotenv()
-print(os.getenv('AWS_ACCESS_KEY_ID'))
+PROXY_API = os.getenv('PROXY_API')
 
 app = cdk.App()
 ApiMeterStack(app, "ApiMeterStack",
@@ -19,6 +19,7 @@ ApiMeterStack(app, "ApiMeterStack",
     # and Region that are implied by the current CLI configuration.
 
     env=cdk.Environment(account=os.getenv('CDK_DEFAULT_ACCOUNT'), region=os.getenv('AWS_DEFAULT_REGION')),
+    proxy_url=PROXY_API
 
     # Uncomment the next line if you know exactly what Account and Region you
     # want to deploy the stack to. */

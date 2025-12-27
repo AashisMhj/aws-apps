@@ -10,3 +10,5 @@ __pycache__
 cdk.out
 .env
 temp.md
+# external packages
+api_meter/lambda/python 

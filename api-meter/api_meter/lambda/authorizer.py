@@ -1,13 +1,13 @@
 import boto3
 import os
+from boto3.dynamodb.conditions import Key
 
 dynamodb = boto3.resource("dynamodb")
 users_table = dynamodb.Table(os.environ['TABLE_NAME'])
 
 
-
 def handler(event, context):
-    api_token = event.get("api-queryStringParameters", {}).get('token')
+    api_token = event.get("queryStringParameters", {}).get('token')
     method_arn = event['methodArn']
 
     if not api_token:
@@ -15,12 +15,9 @@ def handler(event, context):
     
 
     
-    # perform a database check
-    response = users_table.scan(
-        FilterExpression=boto3.dynamodb.conditions.Attr('api_token').eq(api_token)
-
-    )
-    effect = 'Allow' if response['Items'] else 'Deny'
+    user_res = users_table.query(IndexName='APIToken', KeyConditionExpression=Key('api-token').eq(api_token))
+    users = user_res.get('Items', None)
+    effect = 'Allow' if users and users[0] else 'Deny'
 
     return {
         "principalId": "user",
