@@ -66,9 +66,10 @@ class ApiMeterStack(Stack):
             self, "AuthorizerFunction",
             runtime=_lambda.Runtime.PYTHON_3_14,
             handler="authorizer.handler",
-            code=_lambda.Code.from_asset("api_meter/lambda"),
+            code=_lambda.Code.from_asset("api_meter/lambda/authorizer"),
             environment={
-                "TABLE_NAME": user_table.table_name
+                "USER_TABLE_NAME": user_table.table_name,
+                "API_LOG_TABLE": api_log.table_name,
             }
         )
         user_table.grant_read_data(auth_fn)
@@ -86,7 +87,7 @@ class ApiMeterStack(Stack):
         register_handler = _lambda.Function(
             self, "AuthHandler",
             runtime=_lambda.Runtime.PYTHON_3_14,
-            code=_lambda.Code.from_asset("api_meter/lambda"),
+            code=_lambda.Code.from_asset("api_meter/lambda/register"),
             handler="register.handler",
             environment={
                 "TABLE_NAME": user_table.table_name,
@@ -101,10 +102,12 @@ class ApiMeterStack(Stack):
             self, "ProxyFunction",
             runtime=_lambda.Runtime.PYTHON_3_14,
             handler="proxy.handler",
-            code=_lambda.Code.from_asset("api_meter/lambda"),
+            code=_lambda.Code.from_asset("api_meter/lambda/proxy"),
             environment={
                 "LOG_TABLE_NAME": api_log.table_name,
-                "PROXY_API": proxy_url
+                "PROXY_API": proxy_url,
+                "API_LIMIT": '10'
+
 
             },
             layers=[requests_layer]
@@ -117,7 +120,7 @@ class ApiMeterStack(Stack):
             self, "UserInfoFunction",
             runtime=_lambda.Runtime.PYTHON_3_14,
             handler="user-info.handler",
-            code=_lambda.Code.from_asset("api_meter/lambda"),
+            code=_lambda.Code.from_asset("api_meter/lambda/user-info"),
             environment={
                 "LOG_TABLE_NAME": api_log.table_name,
                 "USER_TABLE": user_table.table_name
